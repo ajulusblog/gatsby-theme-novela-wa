@@ -7,7 +7,7 @@ Novela is built by the team at [Narative](https://www.narative.co), and built fo
 
 ### Enhancement
 
-* visit secret page list by: http://localhost:8000/secret  - @2019/11/08
+* add secret page list by: http://localhost:8000/secret  - @2019/11/08
 * add auth0 config ...
 
 
