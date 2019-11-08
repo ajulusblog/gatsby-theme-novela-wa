@@ -27,6 +27,13 @@ function buildPaginatedPath(index, basePath) {
   return index > 1 ? `${basePath}/page/${index}` : basePath;
 }
 
+function buildPaginatedSecret(index, basePath) {
+  if (basePath === '/') {
+    return index > 1 ? `${basePath}secret/${index}` : `${basePath}secret`;
+  }
+  return index > 1 ? `${basePath}/secret/${index}` : `${basePath}/secret`;
+}
+
 function slugify(string, base) {
   const slug = string
     .toLowerCase()
@@ -157,6 +164,22 @@ module.exports = async ({ actions: { createPage }, graphql }, themeOptions) => {
     pageLength,
     pageTemplate: templates.articles,
     buildPath: buildPaginatedPath,
+    context: {
+      authors,
+      basePath,
+      skip: pageLength,
+      limit: pageLength,
+    },
+  });
+
+  log('[Creating]', 'Secret articles page');
+  createPaginatedPages({
+    edges: articles.filter(article => article.secret),
+    pathPrefix: basePath,
+    createPage,
+    pageLength,
+    pageTemplate: templates.articles,
+    buildPath: buildPaginatedSecret,
     context: {
       authors,
       basePath,
