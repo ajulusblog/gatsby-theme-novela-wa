@@ -5,7 +5,7 @@ With minimal styling and maximum features — including multiple homepage layout
 Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
 
 
-### Enhancement
+### Enhancement @2019/11/08
 
 * visit secret page list by: http://localhost:8000/secret
 * add auth0 config ...
