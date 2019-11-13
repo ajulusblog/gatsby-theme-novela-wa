@@ -5,10 +5,12 @@ With minimal styling and maximum features — including multiple homepage layout
 Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
 
 
-### Enhancement
+### Secret list/page authentication with Auth0
 
 * add secret page list by: http://localhost:8000/secret  - @2019/11/08
-* add auth0 config ...
+* add VideoPlayer component in www/src/components - @2019/11/08
+* add auth0 integration  - @2019/11/13
+* add wrapRootElement in www/gatsby-browser.js to check session - @2019/11/13
 
 
 ### Table of Contents

@@ -7,6 +7,7 @@ const siteMetadata = {
   description: `This is my description that will be used in the meta tags and important for search results`,
   hero: {
     heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+    secret : `Welcome to Secret Page, Premium Members!`,
     maxWidth: 652,
   },
   social: [

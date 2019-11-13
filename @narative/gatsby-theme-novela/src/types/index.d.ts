@@ -51,6 +51,12 @@ export interface IArticle {
   };
   timeToRead: number;
   date: string;
+  subscription: boolean;
+}
+
+interface IArticleHero {
+  authors: IAuthor[];
+  secret : boolean;
 }
 
 interface IArticleQuery {
@@ -77,6 +83,9 @@ export type Template = React.FC<{
     authors: IAuthor[];
     mailchimp: boolean;
     next: IArticle[];
+    group: IArticle[];
+    secret: boolean;
+    pageCount: number;
   };
   location: Location;
 }>

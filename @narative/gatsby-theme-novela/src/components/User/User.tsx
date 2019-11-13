@@ -15,11 +15,8 @@ const User: React.FC<{}> = () => {
   const isDark = colorMode === `dark`;
   const fill = isDark ? "#fff" : "#000";
   const isSecret = location.pathname.includes("/secret");
-  console.log('isHome: ', isSecret);
 
   function userHandler(){
-    // TODO: to call outside function switch 
-    console.log('User icon:', 'Clicked!')
     if(isSecret){
       navigate("/");
     }else{

@@ -52,7 +52,20 @@
           }
         }
       ]
-    }
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true,
+          "modules": true
+      }
+   }
   },
   "husky": {
     "hooks": {
@@ -65,6 +78,7 @@
     "trailingComma": "all"
   },
   "dependencies": {
+    "@types/auth0-js": "^9.10.6",
     "@types/theme-ui": "^0.2.4"
   }
 }

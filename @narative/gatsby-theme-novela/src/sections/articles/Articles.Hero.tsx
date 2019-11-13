@@ -6,7 +6,7 @@ import Section from '@components/Section';
 import Bio from '@components/Bio';
 import Icons from '@icons';
 import mediaqueries from '@styles/media';
-import { IAuthor } from '@types';
+import { IArticleHero } from '@types';
 
 import { GridLayoutContext } from './Articles.List.Context';
 
@@ -18,6 +18,7 @@ const authorQuery = graphql`
           siteMetadata {
             hero {
               heading
+              secret
               maxWidth
             }
           }
@@ -27,13 +28,14 @@ const authorQuery = graphql`
   }
 `;
 
-const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
+const ArticlesHero: React.FC<IArticleHero> = ({ authors, secret }) => {
   const { gridLayout = 'tiles', hasSetGridLayout, setGridLayout } = useContext(
     GridLayoutContext,
   );
 
   const results = useStaticQuery(authorQuery);
   const hero = results.site.edges[0].node.siteMetadata.hero;
+  const heroHeadingTitle = (secret && hero.secret)? hero.secret : hero.heading;
   const tilesIsActive = hasSetGridLayout && gridLayout === 'tiles';
   const featuredAuthor = authors.find(author => author.featured);
 
@@ -47,7 +49,7 @@ const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
   return (
     <Section relative id="Articles__Hero">
       <HeadingContainer style={{ maxWidth: `${hero.maxWidth}px` }}>
-        <HeroHeading dangerouslySetInnerHTML={{ __html: hero.heading }} />
+        <HeroHeading dangerouslySetInnerHTML={{ __html: heroHeadingTitle }} />
       </HeadingContainer>
       <SubheadingContainer>
         <Bio author={featuredAuthor} />

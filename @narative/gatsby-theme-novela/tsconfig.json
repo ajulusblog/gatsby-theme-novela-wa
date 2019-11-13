@@ -24,6 +24,7 @@
       "@styles/*": ["src/styles/*"],
       "@icons": ["src/icons"],
       "@types": ["src/types"],
+      "@utils": ["src/utils"],
     }
   },
   "include": ["./src/**/*"],
