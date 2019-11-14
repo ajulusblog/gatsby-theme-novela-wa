@@ -1,3 +1,5 @@
+![screenshot](www/static/novela-wa.png)
+
 # Novela-WA — A Gatsby theme based on Narative
 
 Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
@@ -15,7 +17,7 @@ Novela-WA enhanced the theme by add auth0 integration for secret pages access, e
 ### Auth0 configuration
 
 - create a single page web application in auth0 dashboard
-- cp www/.env.EXAMPLE to www/.env.development and fill the 3 value with your auth0 app settings
+- cp www/.env.EXAMPLE to www/.env.development and fill the 3 values with your auth0 app settings
 
 for example:
 
