@@ -11,6 +11,7 @@ Novela is built by the team at [Narative](https://www.narative.co), and built fo
 * add VideoPlayer component in www/src/components - @2019/11/08
 * add auth0 integration  - @2019/11/13
 * add wrapRootElement in www/gatsby-browser.js to check session - @2019/11/13
+* fix `source and transform nodes` stuck problem by prefix `CHOKIDAR_USEPOLLING=1` on start command - @2019/11/13
 
 
 ### Table of Contents
