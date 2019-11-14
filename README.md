@@ -1,18 +1,31 @@
-# Novela — A Gatsby theme by Narative
-
-With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.
+# Novela-WA — A Gatsby theme based on Narative
 
 Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
 
+Novela-WA enhanced the theme by add auth0 integration for secret pages access, enable VideioPlayer component in .mdx file, also fixed the `source and transform nodes` problem in local MacOS development.
 
-### Secret list/page authentication with Auth0
+### Features
 
-* add secret page list by: http://localhost:8000/secret  - @2019/11/08
-* add VideoPlayer component in www/src/components - @2019/11/08
-* add auth0 integration  - @2019/11/13
-* add wrapRootElement in www/gatsby-browser.js to check session - @2019/11/13
-* fix `source and transform nodes` stuck problem by prefix `CHOKIDAR_USEPOLLING=1` on start command - @2019/11/13
+- add secret page list by: http://localhost:8000/secret  - @2019/11/08
+- add VideoPlayer component in www/src/components - @2019/11/08
+- add auth0 integration  - @2019/11/13
+- add wrapRootElement in www/gatsby-browser.js to check session - @2019/11/13
+- fix `source and transform nodes` stuck problem by prefix `CHOKIDAR_USEPOLLING=1` on start command - @2019/11/13
 
+### Auth0 configuration
+
+- create a single page web application in auth0 dashboard
+- cp www/.env.EXAMPLE to www/.env.development and fill the 3 value with your auth0 app settings
+
+for example:
+
+```
+AUTH0_DOMAIN=yourusername.auth0.com
+AUTH0_CLIENTID=UHgrD3P2nPnmq1Gjj6yU9gxxxxxxxxxx
+AUTH0_CALLBACK=http://localhost:8000/callback
+```
+
+for detailed explanation about auth0 configuration, please reference [this](https://auth0.com/blog/securing-gatsby-with-auth0/).
 
 ### Table of Contents
 
