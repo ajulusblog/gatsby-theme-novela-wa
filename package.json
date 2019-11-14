@@ -46,7 +46,7 @@
     "plugins": [],
     "rules": {
       "import/prefer-default-export": "off",
-      "react/prop-types": 0,
+      "react/prop-types": "off",
       "unicorn/no-abusive-eslint-disable": 0,
       "unicorn/filename-case": [
         "error",
