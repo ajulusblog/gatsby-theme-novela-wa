@@ -4,8 +4,8 @@
  * @2019/11/13
  */
 import React, { useState, useEffect } from "react"
-import { silentAuth } from "@narative/gatsby-theme-novela"
-import Spinner from "@narative/gatsby-theme-novela/src/components/Spinner"
+import { silentAuth } from "@narative/gatsby-theme-novela-wa"
+import Spinner from "@narative/gatsby-theme-novela-wa/src/components/Spinner"
 
 
 const centerBox = {
