@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.3.0 (2019-11-21)
+
+
+### Bug Fixes
+
+* sourcing and transform stuck problem ([6de90f6](https://github.com/runbytech/gatsby-theme-novela-wa/commit/6de90f637b177245356a8d71170caeb8c1d243a6))
+* workflow secrets ([0535a36](https://github.com/runbytech/gatsby-theme-novela-wa/commit/0535a36ccfedce4b54a5e31b2ba0ef0c0d3602a5))
+
+
+### Features
+
+* add user icon in top nav bar ([aec0ec3](https://github.com/runbytech/gatsby-theme-novela-wa/commit/aec0ec32660974ab4ef368c78e06bfd4f25d7bd5))
+* complete auth0 integration for secret page ([c03e545](https://github.com/runbytech/gatsby-theme-novela-wa/commit/c03e545b2df31b7c7c2b4de6f9cd3266f54d5346))
+* refactor to theme-novela-wa ([ae37fc7](https://github.com/runbytech/gatsby-theme-novela-wa/commit/ae37fc7cf306dc5fcab95139397cb56e2bdba048))
+* **server&blog:** add secret page and video component in .mdx ([41cd8bd](https://github.com/runbytech/gatsby-theme-novela-wa/commit/41cd8bd56efbd717d8ef9afdd28dad3204bc3e90))
+
+
+
+
+
 ## [1.2.8](https://github.com/narative/gatsby-theme-novela/compare/www@1.2.7...www@1.2.8) (2019-11-03)
 
 **Note:** Version bump only for package www

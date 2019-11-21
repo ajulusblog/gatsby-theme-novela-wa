@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.1.0 (2019-11-21)
+
+
+### Features
+
+* publish to npm ([571a8d2](https://github.com/runbytech/gatsby-theme-novela-wa/commit/571a8d2f039c2c8fff190ebbdad3f17cedfbf798))
+* refactor to theme-novela-wa ([ae37fc7](https://github.com/runbytech/gatsby-theme-novela-wa/commit/ae37fc7cf306dc5fcab95139397cb56e2bdba048))
+
+
+
+
+
 # [0.10.0](https://github.com/narative/gatsby-theme-novela/compare/@narative/gatsby-theme-novela@0.9.7...@narative/gatsby-theme-novela@0.10.0) (2019-11-03)
 
 
