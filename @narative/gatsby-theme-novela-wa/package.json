@@ -2,7 +2,7 @@
   "name": "@narative/gatsby-theme-novela-wa",
   "author": "dennis@narative.co",
   "repository": "https://github.com/runbytech/gatsby-theme-novela-wa",
-  "version": "0.11.0",
+  "version": "1.0.0",
   "main": "index.js",
   "types": "index.d.ts",
   "license": "MIT",
