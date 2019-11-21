@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/runbytech/gatsby-theme-novela-wa/compare/www@1.3.0...www@1.3.1) (2019-11-21)
+
+
+### Bug Fixes
+
+* fix image broken in readme ([1f3336f](https://github.com/runbytech/gatsby-theme-novela-wa/commit/1f3336f7f995807a640b740ac41816fbb20ec304))
+
+
+
+
+
 # 1.3.0 (2019-11-21)
 
 
