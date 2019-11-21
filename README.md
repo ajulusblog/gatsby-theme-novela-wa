@@ -29,6 +29,34 @@ AUTH0_CALLBACK=http://localhost:8000/callback
 
 for detailed explanation about auth0 configuration, please reference [this](https://auth0.com/blog/securing-gatsby-with-auth0/).
 
+
+### gatsby-browser.js config
+
+wrapRootElement implementation in [gatsby-browser.js](www/gatsby-browser.js) is a must to check login session each time app loaded in browser.
+
+```
+const SessionCheck = ({ children }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => silentAuth(() => setLoading(false)));
+
+  if(loading){
+    return (
+      <div css={centerBox}>
+        <Spinner /> 
+        <p css={spn}>Loading...</p>
+      </div>
+    ) 
+  }
+
+  return (loading === false && <>{children}</>)
+};
+
+export const wrapRootElement = ({ element }) => (
+  <SessionCheck>{element}</SessionCheck>
+);
+```
+
 ### Table of Contents
 
 - [Why Novela?](#why-use-novela)
