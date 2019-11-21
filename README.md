@@ -1,4 +1,4 @@
-![screenshot](www/static/novela-wa.png)
+![screenshot](novela-wa.png)
 
 # Novela-WA — A Gatsby theme based on Narative
 
